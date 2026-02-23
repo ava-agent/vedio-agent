@@ -1,3 +1,9 @@
+---
+next:
+  text: 'MCP 集成指南'
+  link: '/guide/mcp-integration'
+---
+
 # 工具对比总览
 
 > 跨类别综合对比，帮助你快速选择最适合的 AI 多媒体工具
@@ -91,12 +97,15 @@
 
 | 工具 | 类别 | MCP Server |
 |------|------|------------|
+| **MiniMax/Hailuo** | 视频 | [MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP) |
+| **Luma AI** | 视频 | [luma-api-mcp](https://github.com/lumalabs/luma-api-mcp) |
+| **PixVerse** | 视频 | [PixVerse-MCP](https://github.com/PixVerseAI/PixVerse-MCP) |
 | **Recraft v3** | 图片 | [@recraft-ai/mcp-recraft-server](https://github.com/recraft-ai/mcp-recraft-server) |
 | **ElevenLabs** | 语音 | [elevenlabs-mcp](https://github.com/elevenlabs/elevenlabs-mcp) |
 | **MiniMax** | 语音 | [MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP) |
 | **Murf.ai** | 语音 | [murf-mcp](https://github.com/murf-ai/murf-mcp) |
-| **HeyGen** | 虚拟人 | [HeyGen MCP Server](https://docs.heygen.com/docs/heygen-mcp-server) |
 | **Volcengine** | 语音 | [volcengine/mcp-server](https://github.com/volcengine/mcp-server) |
+| **HeyGen** | 虚拟人 | [HeyGen MCP Server](https://docs.heygen.com/docs/heygen-mcp-server) |
 
 ### 社区 MCP Server 丰富的工具
 

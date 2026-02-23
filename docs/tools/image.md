@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'AI 视频生成工具'
+  link: '/tools/video'
+next:
+  text: 'AI 语音合成工具'
+  link: '/tools/tts'
+---
+
 # AI 图片生成工具全面调研
 
 > 调研时间：2025-2026 年主流 AI 图片生成工具

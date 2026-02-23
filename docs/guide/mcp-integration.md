@@ -1,3 +1,12 @@
+---
+prev:
+  text: '工具对比总览'
+  link: '/guide/comparison'
+next:
+  text: 'AI 视频生成工具'
+  link: '/tools/video'
+---
+
 # MCP 集成指南
 
 > 将 AI 多媒体工具集成到 Claude Code / Claude Desktop 的完整指南

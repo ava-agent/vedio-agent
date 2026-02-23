@@ -1,35 +1,16 @@
+---
+prev:
+  text: 'AI 图片生成工具'
+  link: '/tools/image'
+next:
+  text: 'AI 虚拟人工具'
+  link: '/tools/virtual-human'
+---
+
 # AI 语音合成/配音工具全面调研
 
 > 调研时间：2025-2026 年主流 AI TTS 工具
 > 覆盖范围：15 款工具，涵盖商业 API、开源方案、MCP 集成等维度
-
----
-
-## 目录
-
-- [一、总览对比表](#一总览对比表)
-- [二、各工具详细信息](#二各工具详细信息)
-  - [1. ElevenLabs](#1-elevenlabs)
-  - [2. OpenAI TTS](#2-openai-tts)
-  - [3. Azure Speech Service / Azure TTS](#3-azure-speech-service--azure-tts)
-  - [4. Google Cloud TTS / Gemini TTS](#4-google-cloud-tts--gemini-tts)
-  - [5. Fish Audio / Fish Speech](#5-fish-audio--fish-speech)
-  - [6. ChatTTS](#6-chattts)
-  - [7. CosyVoice（阿里 FunAudioLLM）](#7-cosyvoice阿里-funaudiollm)
-  - [8. MiniMax TTS](#8-minimax-tts)
-  - [9. Bark（Suno）](#9-barksuno)
-  - [10. XTTS / Coqui TTS](#10-xtts--coqui-tts)
-  - [11. Edge TTS](#11-edge-tts)
-  - [12. Volcengine TTS / 火山引擎](#12-volcengine-tts--火山引擎)
-  - [13. Resemble.ai](#13-resembleai)
-  - [14. Play.ht](#14-playht)
-  - [15. Murf.ai](#15-murfai)
-- [三、API / MCP Server 汇总表](#三api--mcp-server-汇总表)
-- [四、SDK / 包名汇总表](#四sdk--包名汇总表)
-- [五、定价对比表](#五定价对比表)
-- [六、开源状态对比表](#六开源状态对比表)
-- [七、关键趋势与选型建议](#七关键趋势与选型建议)
-- [八、参考来源](#八参考来源)
 
 ---
 

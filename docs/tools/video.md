@@ -1,3 +1,12 @@
+---
+prev:
+  text: '工具对比总览'
+  link: '/guide/comparison'
+next:
+  text: 'AI 图片生成工具'
+  link: '/tools/image'
+---
+
 # AI 视频生成工具全面调研报告 (2025-2026)
 
 > 调研日期：2026-02-21
