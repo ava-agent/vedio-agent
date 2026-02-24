@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'AI 多媒体工具百科',
   description: 'AI 视频、图片、配音、虚拟人工具全面调研资料站',
   lang: 'zh-CN',
+  base: '/vedio-agent/',
   lastUpdated: true,
 
   head: [

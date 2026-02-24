@@ -1,7 +1,7 @@
 {
   "name": "vedio-agent",
   "version": "1.0.0",
-  "description": "",
+  "description": "AI 多媒体工具百科 - 60+ 款 AI 视频/图片/语音/虚拟人工具调研与 MCP 集成指南",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev docs",
