@@ -4,12 +4,19 @@ export default defineConfig({
   title: 'AI 多媒体工具百科',
   description: 'AI 视频、图片、配音、虚拟人工具全面调研资料站',
   lang: 'zh-CN',
-  base: '/vedio-agent/',
+  base: '/',
   lastUpdated: true,
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
   ],
+
+  vite: {
+    define: {
+      __SUPABASE_URL__: JSON.stringify(process.env.SUPABASE_URL || ''),
+      __SUPABASE_ANON_KEY__: JSON.stringify(process.env.SUPABASE_ANON_KEY || ''),
+    }
+  },
 
   themeConfig: {
     logo: '/logo.svg',
@@ -24,6 +31,15 @@ export default defineConfig({
           { text: 'AI 图片生成', link: '/tools/image' },
           { text: 'AI 语音合成', link: '/tools/tts' },
           { text: 'AI 虚拟人', link: '/tools/virtual-human' },
+        ]
+      },
+      {
+        text: '工作流',
+        items: [
+          { text: '营销视频制作', link: '/workflows/marketing-video' },
+          { text: '图文内容创作', link: '/workflows/image-content' },
+          { text: '音频内容制作', link: '/workflows/audio-production' },
+          { text: '数字人制作', link: '/workflows/digital-human' },
         ]
       },
       { text: '对比总览', link: '/guide/comparison' },
@@ -55,6 +71,26 @@ export default defineConfig({
           items: [
             { text: '工具对比总览', link: '/guide/comparison' },
             { text: 'MCP 集成指南', link: '/guide/mcp-integration' },
+          ]
+        },
+        {
+          text: '工具调研',
+          items: [
+            { text: 'AI 视频生成工具', link: '/tools/video' },
+            { text: 'AI 图片生成工具', link: '/tools/image' },
+            { text: 'AI 语音合成工具', link: '/tools/tts' },
+            { text: 'AI 虚拟人工具', link: '/tools/virtual-human' },
+          ]
+        }
+      ],
+      '/workflows/': [
+        {
+          text: 'AI 工作流',
+          items: [
+            { text: '营销视频制作', link: '/workflows/marketing-video' },
+            { text: '图文内容创作', link: '/workflows/image-content' },
+            { text: '音频内容制作', link: '/workflows/audio-production' },
+            { text: '数字人制作', link: '/workflows/digital-human' },
           ]
         },
         {

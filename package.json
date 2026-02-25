@@ -1,18 +1,22 @@
 {
   "name": "vedio-agent",
-  "version": "1.0.0",
-  "description": "AI 多媒体工具百科 - 60+ 款 AI 视频/图片/语音/虚拟人工具调研与 MCP 集成指南",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "AI 多媒体工具百科 - 工具调研、工作流提示词、在线生成平台",
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": ["ai", "multimedia", "vitepress", "mcp"],
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.0"
+  },
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "@vercel/node": "^5.0.0",
+    "typescript": "^5.7.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.0"
   }
 }

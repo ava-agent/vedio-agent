@@ -7,13 +7,24 @@ hero:
   tagline: 全面覆盖 60+ 款 AI 多媒体工具的调研、对比与集成指南
   actions:
     - theme: brand
-      text: 开始浏览
+      text: 工作流指南
+      link: /workflows/marketing-video
+    - theme: alt
+      text: 工具百科
       link: /guide/comparison
     - theme: alt
-      text: MCP 集成指南
+      text: MCP 集成
       link: /guide/mcp-integration
 
 features:
+  - icon: 🚀
+    title: AI 工作流
+    details: 4 大场景工作流（营销视频、图文创作、有声内容、数字人），每步附带可复制提示词模板和成本估算
+    link: /workflows/marketing-video
+  - icon: ⚡
+    title: 在线生成
+    details: 填写参数即可调用 AI API 生成图片、语音、视频，支持 OpenAI、Google、ElevenLabs 等多个平台
+    link: /workflows/image-content
   - icon: 🎬
     title: AI 视频生成
     details: 覆盖 Seedance、Veo、Runway、Sora、Kling 等 14 款视频生成工具，含 API、SDK、MCP、定价全面对比
