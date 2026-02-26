@@ -1,7 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { verifyUser } from '../_lib/auth'
+import { verifyUser, getUserSupabase } from '../_lib/auth'
 import { encryptApiKey } from '../_lib/encryption'
-import { getSupabaseAdmin } from '../_lib/supabase'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
@@ -12,12 +11,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { provider, key } = req.body
   if (!provider || !key) return res.status(400).json({ error: 'Missing provider or key' })
 
-  const secret = process.env.ENCRYPTION_SECRET
+  const secret = process.env.ENCRYPTION_KEY
   if (!secret) return res.status(500).json({ error: 'Server encryption not configured' })
 
   const encrypted = encryptApiKey(key, secret)
   const hint = key.slice(-6)
-  const supabase = getSupabaseAdmin()
+  const supabase = getUserSupabase(req)
+  if (!supabase) return res.status(401).json({ error: 'Unauthorized' })
 
   const { error } = await supabase.from('va_api_keys').upsert({
     user_id: user.id,
