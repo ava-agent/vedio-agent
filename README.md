@@ -2,6 +2,8 @@
 
 > 全面覆盖 60+ 款 AI 多媒体工具的调研、对比与 MCP 集成指南，附带 4 大工作流提示词模板
 
+**线上地址**: https://vedio-agent.vercel.app
+
 ## 内容覆盖
 
 | 类别 | 工具数量 | 包含内容 |
@@ -61,10 +63,13 @@ npm run docs:preview
 
 ### 环境变量
 
-```bash
-cp .env.example .env.local
-# 编辑 .env.local 填写 Supabase 和加密密钥
-```
+复制 `.env.example` 到 `.env.local` 并填写以下变量：
+
+| 变量名 | 说明 | 获取方式 |
+|--------|------|---------|
+| `SUPABASE_URL` | Supabase 项目 URL | Supabase 控制台 → Settings → API |
+| `SUPABASE_ANON_KEY` | Supabase 匿名密钥 | Supabase 控制台 → Settings → API |
+| `ENCRYPTION_KEY` | API Key 加密密钥 | `openssl rand -hex 32` 生成 |
 
 ## 项目结构
 
@@ -86,6 +91,17 @@ vedio-agent/
 ├── vercel.json                   # Vercel 部署配置
 └── .env.example                  # 环境变量模板
 ```
+
+## 更新日志
+
+### v2.0.0 (2026-03-02)
+
+- 新增 4 个工作流页面（营销视频、图文创作、有声内容、数字人）
+- 新增 5 个 Vue 交互组件（PromptCard、GeneratePanel、ApiKeyManager、WorkflowStepper、CostEstimate）
+- 新增 Vercel Serverless API 函数（图片/语音/视频/数字人生成代理）
+- 新增 Supabase 数据库（API Key 加密存储 + 生成历史）
+- 从 GitHub Pages 迁移到 Vercel 部署
+- 更新首页添加工作流和在线生成入口
 
 ## License
 
