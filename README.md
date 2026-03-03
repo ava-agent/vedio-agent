@@ -4,6 +4,17 @@
 
 **线上地址**: https://vedio-agent.vercel.app
 
+## 项目定位
+
+本项目是一个**纯指南站**，专注于：
+
+- 提供高质量的工作流指南和可复制的提示词模板
+- 整理现有最佳开源项目，直接链接使用
+- 提供 MCP Server 配置命令，快速集成 AI 能力
+- 工具对比表和成本估算，帮助快速选型
+
+**不重复造轮子** — 推荐直接使用 MoneyPrinterTurbo、ShortGPT 等成熟开源项目。
+
 ## 内容覆盖
 
 | 类别 | 工具数量 | 包含内容 |
@@ -14,6 +25,15 @@
 | AI 虚拟人 | 17 款 | HeyGen、D-ID、Synthesia、LivePortrait、Hallo 等 |
 | **合计** | **61 款** | 覆盖 API / SDK / MCP / 定价 / 开源方案 |
 
+## 推荐开源项目
+
+| 项目 | Stars | 描述 | 链接 |
+|------|-------|------|------|
+| MoneyPrinterTurbo | 49.8k | 一键生成高清短视频，批量支持 | [GitHub](https://github.com/harry0703/MoneyPrinterTurbo) |
+| ShortGPT | 7.1k | AI 框架，YouTube Shorts 自动化 | [GitHub](https://github.com/RayVentura/ShortGPT) |
+| LivePortrait | 17.9k | 实时人脸动画驱动 | [GitHub](https://github.com/KlingAIResearch/LivePortrait) |
+| CosyVoice | 19.8k | 多语言语音生成 | [GitHub](https://github.com/FunAudioLLM/CosyVoice) |
+
 ## 工作流指南
 
 | 工作流 | 步骤 | 预估成本 |
@@ -23,27 +43,13 @@
 | [有声内容制作](/workflows/audio-production) | 稿件 → 语音 → 多角色 → BGM | ~$0.61-$2.11 |
 | [数字人制作](/workflows/digital-human) | 形象 → 动作 → 唇形 → 互动 | ~$0.54 |
 
-每个工作流包含可复制的提示词模板、工具对比表和成本估算。
-
 ## 特色
 
-- **工作流指南** — 4 大场景的完整制作流程，附带提示词模板和 MCP 命令
-- **交互式生成** — 填写参数调用 AI API 生成图片/语音/视频（Vercel + Supabase）
+- **开源项目推荐** — 直接链接到 MoneyPrinterTurbo、ShortGPT 等成熟项目
 - **MCP 集成指南** — 每款工具的 Claude Code / Claude Desktop MCP Server 配置方法
-- **横向对比** — 按企业商用、开发者集成、开源自部署、零成本四大场景推荐
-- **全文搜索** — VitePress 本地搜索，快速定位工具信息
-
-## 技术架构
-
-```
-VitePress (静态文档 + Vue 交互组件)
-    ↓
-Vercel (静态托管 + Serverless API)
-    ↓
-Supabase (用户认证 + API Key 存储 + 生成历史)
-    ↓
-外部 AI APIs (OpenAI, Google, ElevenLabs, HeyGen, Runway...)
-```
+- **提示词模板** — 可复制粘贴的工作流提示词，支持参数替换
+- **成本估算** — 每个步骤的预估成本，帮助预算规划
+- **工具对比** — 按企业商用、开发者集成、开源自部署、零成本四大场景推荐
 
 ## 本地开发
 
@@ -61,47 +67,34 @@ npm run docs:build
 npm run docs:preview
 ```
 
-### 环境变量
-
-复制 `.env.example` 到 `.env.local` 并填写以下变量：
-
-| 变量名 | 说明 | 获取方式 |
-|--------|------|---------|
-| `SUPABASE_URL` | Supabase 项目 URL | Supabase 控制台 → Settings → API |
-| `SUPABASE_ANON_KEY` | Supabase 匿名密钥 | Supabase 控制台 → Settings → API |
-| `ENCRYPTION_KEY` | API Key 加密密钥 | `openssl rand -hex 32` 生成 |
-
 ## 项目结构
 
 ```
 vedio-agent/
-├── api/                          # Vercel Serverless Functions
-│   ├── generate/                 # AI 生成代理 (image/tts/video/avatar)
-│   ├── keys/                     # API Key 管理
-│   ├── history/                  # 生成历史
-│   └── _lib/                     # 共享工具 (auth/supabase/encryption)
 ├── docs/
 │   ├── workflows/                # 4 个工作流指南
 │   ├── tools/                    # 4 类工具百科
-│   ├── guide/                    # 对比总览 + MCP 集成
+│   ├── guide/                    # 快速开始 + 对比 + MCP
 │   └── .vitepress/
 │       ├── config.mts            # VitePress 配置
 │       └── theme/                # 自定义主题 + Vue 组件
-├── supabase/migrations/          # 数据库 schema
-├── vercel.json                   # Vercel 部署配置
-└── .env.example                  # 环境变量模板
+└── package.json
 ```
 
 ## 更新日志
 
+### v3.0.0 (2026-03-03)
+
+- 重构为纯指南站，移除自定义 API 功能
+- 新增「快速开始」和「开源项目推荐」页面
+- 推荐直接使用 MoneyPrinterTurbo、ShortGPT 等成熟项目
+- 简化项目结构，移除 Supabase 依赖
+
 ### v2.0.0 (2026-03-02)
 
-- 新增 4 个工作流页面（营销视频、图文创作、有声内容、数字人）
-- 新增 5 个 Vue 交互组件（PromptCard、GeneratePanel、ApiKeyManager、WorkflowStepper、CostEstimate）
-- 新增 Vercel Serverless API 函数（图片/语音/视频/数字人生成代理）
-- 新增 Supabase 数据库（API Key 加密存储 + 生成历史）
-- 从 GitHub Pages 迁移到 Vercel 部署
-- 更新首页添加工作流和在线生成入口
+- 新增 4 个工作流页面
+- 新增 Vue 交互组件
+- 从 GitHub Pages 迁移到 Vercel
 
 ## License
 

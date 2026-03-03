@@ -79,7 +79,7 @@ No text, no watermark, clean composition"
 | FLUX.2 | `claude mcp add flux npx -y image-generation-mcp-server` | $0.014/张 | 性价比最高 |
 | Ideogram 3.0 | `claude mcp add ideogram npx -y ideogram-mcp-server` | $0.02/张 | 带文字的图片 |
 
-<GeneratePanel type="image" />
+
 
 ---
 
@@ -104,7 +104,7 @@ No text, no watermark, clean composition"
 | MiniMax TTS | `claude mcp add minimax-tts npx -y @minimax-ai/mcp` | ~150ms | 中文效果佳 |
 | Fish Audio | `claude mcp add fish-audio npx -y mcp-fish-audio-server` | ~300ms | 开源，性价比高 |
 
-<GeneratePanel type="tts" />
+
 
 ---
 
@@ -128,7 +128,7 @@ No text, no watermark, clean composition"
 
 > HeyGen 是目前**唯一提供官方 MCP Server 的数字人工具**，可直接在 Claude Code 中调用
 
-<GeneratePanel type="avatar" />
+
 
 ---
 
@@ -156,7 +156,7 @@ Resolution: 1080p"
 | Luma Dream Machine | 5秒 | ~$0.30/5s | 创意效果 |
 | Seedance 1.0 | 10秒 | 按量付费 | 动作流畅 |
 
-<GeneratePanel type="video" />
+
 
 ---
 

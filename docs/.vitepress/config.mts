@@ -8,15 +8,8 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
   ],
-
-  vite: {
-    define: {
-      __SUPABASE_URL__: JSON.stringify(process.env.SUPABASE_URL || ''),
-      __SUPABASE_ANON_KEY__: JSON.stringify(process.env.SUPABASE_ANON_KEY || ''),
-    }
-  },
 
   themeConfig: {
     logo: '/logo.svg',
@@ -25,12 +18,19 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
+        text: '快速开始',
+        items: [
+          { text: '一键视频生成', link: '/guide/quick-start' },
+          { text: '开源项目推荐', link: '/guide/open-source-projects' }
+        ]
+      },
+      {
         text: '工具调研',
         items: [
           { text: 'AI 视频生成', link: '/tools/video' },
           { text: 'AI 图片生成', link: '/tools/image' },
           { text: 'AI 语音合成', link: '/tools/tts' },
-          { text: 'AI 虚拟人', link: '/tools/virtual-human' },
+          { text: 'AI 虚拟人', link: '/tools/virtual-human' }
         ]
       },
       {
@@ -39,11 +39,11 @@ export default defineConfig({
           { text: '营销视频制作', link: '/workflows/marketing-video' },
           { text: '图文内容创作', link: '/workflows/image-content' },
           { text: '音频内容制作', link: '/workflows/audio-production' },
-          { text: '数字人制作', link: '/workflows/digital-human' },
+          { text: '数字人制作', link: '/workflows/digital-human' }
         ]
       },
       { text: '对比总览', link: '/guide/comparison' },
-      { text: 'MCP 集成', link: '/guide/mcp-integration' },
+      { text: 'MCP 集成', link: '/guide/mcp-integration' }
     ],
 
     sidebar: {
@@ -54,32 +54,30 @@ export default defineConfig({
             { text: 'AI 视频生成工具', link: '/tools/video' },
             { text: 'AI 图片生成工具', link: '/tools/image' },
             { text: 'AI 语音合成工具', link: '/tools/tts' },
-            { text: 'AI 虚拟人工具', link: '/tools/virtual-human' },
+            { text: 'AI 虚拟人工具', link: '/tools/virtual-human' }
           ]
         },
         {
-          text: '指南',
+          text: '快速开始',
           items: [
-            { text: '工具对比总览', link: '/guide/comparison' },
-            { text: 'MCP 集成指南', link: '/guide/mcp-integration' },
+            { text: '一键视频生成', link: '/guide/quick-start' },
+            { text: '开源项目推荐', link: '/guide/open-source-projects' }
           ]
         }
       ],
       '/guide/': [
         {
-          text: '指南',
+          text: '快速开始',
           items: [
-            { text: '工具对比总览', link: '/guide/comparison' },
-            { text: 'MCP 集成指南', link: '/guide/mcp-integration' },
+            { text: '一键视频生成', link: '/guide/quick-start' },
+            { text: '开源项目推荐', link: '/guide/open-source-projects' }
           ]
         },
         {
-          text: '工具调研',
+          text: '指南',
           items: [
-            { text: 'AI 视频生成工具', link: '/tools/video' },
-            { text: 'AI 图片生成工具', link: '/tools/image' },
-            { text: 'AI 语音合成工具', link: '/tools/tts' },
-            { text: 'AI 虚拟人工具', link: '/tools/virtual-human' },
+            { text: '工具对比总览', link: '/guide/comparison' },
+            { text: 'MCP 集成指南', link: '/guide/mcp-integration' }
           ]
         }
       ],
@@ -90,19 +88,17 @@ export default defineConfig({
             { text: '营销视频制作', link: '/workflows/marketing-video' },
             { text: '图文内容创作', link: '/workflows/image-content' },
             { text: '音频内容制作', link: '/workflows/audio-production' },
-            { text: '数字人制作', link: '/workflows/digital-human' },
+            { text: '数字人制作', link: '/workflows/digital-human' }
           ]
         },
         {
-          text: '工具调研',
+          text: '快速开始',
           items: [
-            { text: 'AI 视频生成工具', link: '/tools/video' },
-            { text: 'AI 图片生成工具', link: '/tools/image' },
-            { text: 'AI 语音合成工具', link: '/tools/tts' },
-            { text: 'AI 虚拟人工具', link: '/tools/virtual-human' },
+            { text: '一键视频生成', link: '/guide/quick-start' },
+            { text: '开源项目推荐', link: '/guide/open-source-projects' }
           ]
         }
-      ],
+      ]
     },
 
     footer: {
@@ -120,7 +116,7 @@ export default defineConfig({
     },
 
     lastUpdated: {
-      text: '最后更新',
+      text: '最后更新'
     },
 
     docFooter: {
@@ -130,6 +126,6 @@ export default defineConfig({
 
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '菜单',
-    darkModeSwitchLabel: '主题',
+    darkModeSwitchLabel: '主题'
   }
 })

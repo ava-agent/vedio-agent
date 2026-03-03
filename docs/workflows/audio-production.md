@@ -86,7 +86,7 @@ next:
 
 > **零成本方案**: Edge TTS 完全免费，支持 322 种语音，适合批量生成或预算有限的场景
 
-<GeneratePanel type="tts" />
+
 
 ---
 

@@ -86,7 +86,7 @@ Requirements:
 | 插画风格 | FLUX.2 / Midjourney | 艺术质量高 |
 | 需要 SVG | Recraft v3 | 唯一支持矢量输出 |
 
-<GeneratePanel type="image" />
+
 
 ---
 
