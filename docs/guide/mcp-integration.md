@@ -19,6 +19,8 @@ next:
 
 通过 MCP Server，你可以让 Claude 直接调用图片生成、语音合成、数字人创建等 AI 工具。
 
+![MCP 集成架构图](/images/mcp-architecture.png)
+
 ---
 
 ## 快速开始

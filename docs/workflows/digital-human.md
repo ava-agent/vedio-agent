@@ -13,6 +13,8 @@ next:
 
 <WorkflowStepper :steps="['形象设计', '动作驱动', '唇形同步', '实时互动']" />
 
+![AI 数字人制作流程](/images/workflow-digital-human.png)
+
 <CostEstimate :items="[
   { step: '形象设计', tool: 'GPT-Image-1 / Midjourney', cost: '~$0.04' },
   { step: '动作驱动', tool: 'LivePortrait / Wan 2.2', cost: '开源免费' },

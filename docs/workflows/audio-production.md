@@ -13,6 +13,8 @@ next:
 
 <WorkflowStepper :steps="['稿件撰写', '语音合成', '多角色配音', 'BGM 配乐']" />
 
+![AI 有声内容制作流程](/images/workflow-audio-production.png)
+
 <CostEstimate :items="[
   { step: '稿件撰写 (1000字)', tool: 'Claude / GPT-4o', cost: '~$0.01' },
   { step: '语音合成 (5分钟)', tool: 'ElevenLabs / Fish Audio', cost: '~$0.30-$1.50' },

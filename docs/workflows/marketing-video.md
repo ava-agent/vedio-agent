@@ -13,6 +13,8 @@ next:
 
 <WorkflowStepper :steps="['脚本撰写', '分镜配图', '配音生成', '数字人出镜', '视频合成']" />
 
+![AI 营销视频全流程](/images/workflow-marketing-video.png)
+
 <CostEstimate :items="[
   { step: '脚本撰写', tool: 'Claude / GPT-4o', cost: '~$0.01' },
   { step: '分镜配图 (5张)', tool: 'FLUX.2 / Imagen 4', cost: '~$0.07-$0.10' },

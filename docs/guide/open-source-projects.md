@@ -3,8 +3,8 @@ prev:
   text: '快速开始'
   link: '/guide/quick-start'
 next:
-  text: 'MCP 集成'
-  link: '/guide/mcp-integration'
+  text: '工具对比总览'
+  link: '/guide/comparison'
 ---
 
 # 开源项目推荐

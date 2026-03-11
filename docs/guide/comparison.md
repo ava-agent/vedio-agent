@@ -1,4 +1,7 @@
 ---
+prev:
+  text: '开源项目推荐'
+  link: '/guide/open-source-projects'
 next:
   text: 'MCP 集成指南'
   link: '/guide/mcp-integration'
@@ -7,6 +10,8 @@ next:
 # 工具对比总览
 
 > 跨类别综合对比，帮助你快速选择最适合的 AI 多媒体工具
+
+![AI 多媒体工具全景图](/images/tools-landscape.png)
 
 ---
 

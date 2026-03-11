@@ -13,6 +13,8 @@ next:
 
 <WorkflowStepper :steps="['文案撰写', '封面设计', '文章配图', '矢量图标']" />
 
+![AI 图文内容创作流程](/images/workflow-image-content.png)
+
 <CostEstimate :items="[
   { step: '文案撰写', tool: 'Claude / GPT-4o', cost: '~$0.01' },
   { step: '封面图', tool: 'GPT-Image-1 / Ideogram', cost: '~$0.04' },
