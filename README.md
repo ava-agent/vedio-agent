@@ -24,6 +24,20 @@
 | [有声内容制作](http://video.rxcloud.group/workflows/audio-production) | 稿件 → 语音 → 多角色 → BGM | ~$0.61-$2.11 |
 | [数字人制作](http://video.rxcloud.group/workflows/digital-human) | 形象 → 动作 → 唇形 → 互动 | ~$0.54 |
 
+## 页面预览
+
+### 首页
+![首页](docs/public/images/screenshot-home.png)
+
+### 工具对比
+![工具对比](docs/public/images/screenshot-comparison.png)
+
+### 工作流
+![营销视频工作流](docs/public/images/screenshot-workflow-marketing.png)
+
+### MCP 集成
+![MCP 集成指南](docs/public/images/screenshot-mcp-integration.png)
+
 ## 特色
 
 - **61+ 工具对比** — 一表看全，按场景快速选型
