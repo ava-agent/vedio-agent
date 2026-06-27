@@ -7,9 +7,9 @@ next:
   link: '/tools/image'
 ---
 
-# AI 视频生成工具 (14 款)
+# AI 视频生成工具 (13 款)
 
-> 覆盖 14 款主流 AI 视频生成工具，含 API、MCP、定价全面对比
+> 覆盖 13 款主流 AI 视频生成工具，含 API、MCP、定价全面对比
 
 ![AI 视频生成工具对比](/images/tools-video-comparison.png)
 
@@ -31,7 +31,6 @@ next:
 | **Vidu** | 生数科技 | 1080p | 16s | 有 | 社区 | 部分 | ~$0.038/s |
 | **Mochi** | Genmo | 480p | 5.4s | 第三方 | 无 | **Apache 2.0** | 免费 |
 | **LTX Video** | Lightricks | 4K | 20s | 有 | 无 | **开放权重** | 免费 |
-| **CogVideo** | 智谱AI | 1360x768 | 10s | 有 | 无 | **Apache 2.0** | 免费 |
 | **SVD** | Stability AI | 1024x576 | 4s | 已停止 | 无 | **开放权重** | 免费 |
 
 ---
@@ -41,9 +40,9 @@ next:
 | 场景 | 推荐工具 | 理由 |
 |------|---------|------|
 | **质量最高** | Runway Gen-4.5 / Veo 3.1 | 画面品质领先 |
-| **性价比最高** | Kling / MiniMax Hailuo | API 价格低，质量好 |
-| **MCP 集成** | MiniMax / Luma / PixVerse | 官方 MCP Server |
-| **开源自部署** | CogVideoX / LTX-2 | Apache 2.0，商用友好 |
+| **性价比最高** | Seedance 2.0 / Kling / MiniMax Hailuo | API 价格低，质量好 |
+| **MCP 集成** | Seedance via mcp-video-gen / MiniMax / Luma / PixVerse | Ark Seedance 已接入社区 MCP，MiniMax/Luma/PixVerse 有官方 MCP Server |
+| **开源自部署** | LTX-2 / Mochi | 商用友好，适合本地 GPU 工作流 |
 | **最长视频** | Veo 3.1 (~148s 扩展) | 支持视频扩展 |
 | **原生音频** | Seedance 2.0 / Veo 3.1 / Kling 2.6 | 音视频同步生成 |
 

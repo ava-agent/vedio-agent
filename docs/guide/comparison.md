@@ -45,13 +45,13 @@ next:
 | Claude/AI Agent | HeyGen (MCP) + ElevenLabs (MCP) | 官方 MCP Server 支持 |
 | 批量图片生成 | Imagen 4 Fast / FLUX.2 | $0.014-$0.02/张，性价比极高 |
 | 实时语音对话 | Murf Falcon / ElevenLabs Flash | <75ms 延迟 |
-| 视频生成 API | Runway Gen-4 / Kling | 成熟 API + 高质量 |
+| 视频生成 API | Seedance 2.0 / Runway Gen-4 / Kling | Ark Seedance 可通过 mcp-video-gen 接入，Runway/Kling API 成熟 |
 
 ### 开源自部署
 
 | 场景 | 推荐工具 | 理由 |
 |------|---------|------|
-| 视频生成 | CogVideoX / LTX Video | Apache 2.0 商用友好 |
+| 视频生成 | LTX Video / Mochi | 商用友好，适合本地 GPU 工作流 |
 | 图片生成 | FLUX.2 [klein] / SD 3.5 | 社区生态丰富 |
 | 语音合成 | Fish Audio S1 / CosyVoice | TTS-Arena 排名最高 |
 | 数字人 | Wan 2.2 + MuseTalk | 全链路开源方案 |

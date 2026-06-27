@@ -31,7 +31,7 @@ Brief → 模板选择 → 项目创建 → 脚本撰写
 | 能力 | MCP | Provider | 状态 |
 |------|-----|----------|------|
 | 文生图 | mcp-image | Gemini | ✅ |
-| 文生视频 | mcp-video-gen | cogvideo / kling / minimax | ✅ |
+| 文生视频 | mcp-video-gen | ark-seedance / kling / minimax | ✅ |
 | 文字转语音 | mcp-video-gen | minimax TTS | ✅ |
 | AI 音乐生成 | mcp-video-gen | minimax Music | ✅ |
 | 文/图生 3D | mcp-3d-gen | Tripo3D | ✅ |
