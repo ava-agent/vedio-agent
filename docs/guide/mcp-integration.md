@@ -298,11 +298,11 @@ export HEYGEN_API_KEY=your_api_key
 
 ```bash
 # .env 文件（加入 .gitignore）
-GEMINI_API_KEY=your_gemini_key
-OPENAI_API_KEY=your_openai_key
-ELEVENLABS_API_KEY=your_elevenlabs_key
-HEYGEN_API_KEY=your_heygen_key
-RECRAFT_API_TOKEN=your_recraft_token
+GEMINI_API_KEY=<your-gemini-key>
+OPENAI_API_KEY=<your-openai-key>
+ELEVENLABS_API_KEY=<your-elevenlabs-key>
+HEYGEN_API_KEY=<your-heygen-key>
+RECRAFT_API_TOKEN=<your-recraft-token>
 ```
 
 ---

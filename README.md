@@ -2,7 +2,7 @@
 
 > 61+ 款 AI 多媒体工具调研、对比与 MCP 集成指南
 
-**线上地址**: http://video.rxcloud.group/
+**线上地址**: https://video.rxcloud.group/
 
 ![AI 多媒体工具全景图](docs/public/images/tools-landscape.png)
 
@@ -19,10 +19,10 @@
 
 | 工作流 | 流程 | 预估成本 |
 |--------|------|---------|
-| [营销视频制作](http://video.rxcloud.group/workflows/marketing-video) | 脚本 → 配图 → 配音 → 数字人 → 视频 | ~$1.68-$2.11 |
-| [图文内容创作](http://video.rxcloud.group/workflows/image-content) | 文案 → 封面 → 配图 → 图标 | ~$0.11-$0.13 |
-| [有声内容制作](http://video.rxcloud.group/workflows/audio-production) | 稿件 → 语音 → 多角色 → BGM | ~$0.61-$2.11 |
-| [数字人制作](http://video.rxcloud.group/workflows/digital-human) | 形象 → 动作 → 唇形 → 互动 | ~$0.54 |
+| [营销视频制作](https://video.rxcloud.group/workflows/marketing-video) | 脚本 → 配图 → 配音 → 数字人 → 视频 | ~$1.68-$2.11 |
+| [图文内容创作](https://video.rxcloud.group/workflows/image-content) | 文案 → 封面 → 配图 → 图标 | ~$0.11-$0.13 |
+| [有声内容制作](https://video.rxcloud.group/workflows/audio-production) | 稿件 → 语音 → 多角色 → BGM | ~$0.61-$2.11 |
+| [数字人制作](https://video.rxcloud.group/workflows/digital-human) | 形象 → 动作 → 唇形 → 互动 | ~$0.54 |
 
 ## 页面预览
 
@@ -50,10 +50,16 @@
 
 ```bash
 npm install
-npm run docs:dev      # 开发
-npm run docs:build    # 构建
-npm run docs:preview  # 预览
+npm run dev      # 开发
+npm run build    # 构建
+npm run preview  # 预览
+npm run test     # 文档站构建烟测
+npm run lint     # 文档站构建校验
 ```
+
+## 部署
+
+主站部署在 Vercel，构建命令为 `npm run build`，输出目录为 `docs/.vitepress/dist`。详细配置见 [DEPLOYMENT.md](./DEPLOYMENT.md)。
 
 ## License
 

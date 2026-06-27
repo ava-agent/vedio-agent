@@ -3,6 +3,11 @@
   "version": "3.0.0",
   "description": "AI 多媒体工具百科 - 工具调研、工作流指南、开源项目导航",
   "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "lint": "npm run build",
+    "test": "npm run build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
